@@ -1,0 +1,46 @@
+body {
+    margin: 0 !important;
+}
+
+.header {
+    background-color: #8A8DF1;
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+/*Caixa de Altura, Peso e Idade*/
+
+label {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+/**Imagens junto com os botoes**/
+#Botoes {
+   
+}
+
+#btCAL {
+    background-color: blueviolet;;
+    text-transform: uppercase;
+}
+
+#imagem-ney {
+    padding-top: 50px;
+}
+
+#btmMulher {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.tb {
+    text-transform: uppercase;
+
+}
+#cont {
+   background-color:  #8A8DF1;
+}

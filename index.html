@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Calcule aqui a sua massa Corporal:</h1>
+    </header>
+    <main>
+        <div class="container mx-auto mt-5" id="cont" >
+            <div class="row" >
+                <div id="informa" class="col-sm-4">
+                    <div class="form-imc">
+                        <p id="result"></p>
+                        <p id="msg"></p>
+                        <form novalidate class="form">
+                            <label for="peso" class="form-label">Informe o peso:</label>
+                            <input type="number" class="form-control" placeholder="Peso (Kg)" id="peso" />
+                            <label for="altura" class="form-label">Informe a altura:</label>
+                            <input type="number" class="form-control" placeholder="Altura" id="alt" />
+                            <label>Idade:</label><br>
+                            <input type="number" id="idade" class="form-control" placeholder="Idade"><br>
+                        </form>
+                        <button id="btCAL" class="btn calcular" onclick="cacular()">Calcular</button>
+                    </div>
+                </div>
+                <div id="Botoes" class="col-sm-4">
+                    <div class="imc-resultado homem">
+                        <button
+                            onclick="document.getElementById('imagem-ney').src='img/mulher-de-negocios-elegante-e-confiante-sorrindo_176420-19466.avif'"
+                            id="btmMulher" type="button" style="background-color: blueviolet;">Mulher</button>
+                        <button
+                            onclick="document.getElementById('imagem-ney').src='img/22jun2013---neymar-corre-de-bracos-abertos-apos-marcar-segundo-gol-do-brasil-sobre-a-italia-1371932539035_956x500.jpg'"
+                            id="btmHomen" type="button" style="background-color: blue;">Homem</button>
+                        <img id="imagem-ney"
+                            src="img/22jun2013---neymar-corre-de-bracos-abertos-apos-marcar-segundo-gol-do-brasil-sobre-a-italia-1371932539035_956x500.jpg"
+                            style="width: 300px">
+                    </div>
+                </div>
+                <div id="Tabela" class="col-sm-4">
+                    <div>
+                        <p class="tb"><b>Classificação:</b></p>
+                        <div>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>IMC</th>
+                                        <th>CLASSIFICAÇÃO</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id="r1">
+                                        <td id="r1i">Menor que 18,5</td>
+                                        <td id="r1c">Abaixo do peso</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="r2i">18,5 a 24,9</td>
+                                        <td id="r2c">Peso normal. Parabéns</td>
+                                    </tr>
+                                    <tr id="r3">
+                                        <td id="r3i">25,0 a 29,9</td>
+                                        <td id="r3c">Acima do peso</td>
+                                    </tr>
+                                    <tr id="r4">
+                                        <td id="r4i">30,0 a 34,9</td>
+                                        <td id="r4c">Obesidade Grau 1</td>
+                                    </tr>
+                                    <tr id="r5">
+                                        <td id="r5i">35,0 a 39,9</td>
+                                        <td id="r5c">Obesidade Grau 2</td>
+                                    </tr>
+                                    <tr id="r6">
+                                        <td id="r6i">Maior que 40,0</td>
+                                        <td id="r6c">Obesidade Grau 3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js">
+    </script>
+    
+</body>
+
+</html>
